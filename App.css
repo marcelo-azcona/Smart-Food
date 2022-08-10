@@ -1,0 +1,46 @@
+/*
+--- 01 TYPOGRAPHY
+
+- Font weights:
+Default: 400
+
+- Line heights:
+Default: 1
+
+
+--- 02 COLORS
+Primary: #e67e22
+Tints:
+Shades:
+Accents:
+Greys: #555
+
+--- 05 SHADOWS
+
+--- 06 BORDER RADIUS
+
+--- 07 WHITESPACE
+
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Asap', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
