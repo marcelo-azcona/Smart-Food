@@ -1,4 +1,4 @@
-import Recomendations from './recomendation.component';
+import Recomendation from './hero-recomendation.component';
 import heroImg from '../../assets/img/hero.png';
 import './hero.style.css';
 
@@ -13,7 +13,7 @@ const HeroSection = () => {
           <p className="hero-description">
             The smart 365-days-per-year food subscription that will make you eat
             healthy again. Tailored to your personal tastes and nutritional
-            needs. We have delivered 250,000+ meals last year!
+            needs.
           </p>
           <a href="#" className="btn btn--full margin-right-sm">
             Start a healthy life!
@@ -21,7 +21,7 @@ const HeroSection = () => {
           <a href="#" className="btn btn--outline">
             Learn more &darr;
           </a>
-          <Recomendations />
+          <Recomendation />
         </div>
         <div className="hero-img-box">
           <img

@@ -1,5 +1,7 @@
 import { Component } from 'react';
-import HeroSection from './components/hero-section/hero.component';
+import Header from './components/header/header.component';
+import HeroSection from './components/hero-section/hero-main.component';
+import HowItWorks from './components/how-it-works-section/how-it-works.component';
 import './App.css';
 
 class App extends Component {
@@ -24,7 +26,11 @@ class App extends Component {
 
     return (
       <div className="App">
-        <HeroSection />
+        <Header />
+        <main>
+          <HeroSection />
+          <HowItWorks />
+        </main>
       </div>
     );
   }

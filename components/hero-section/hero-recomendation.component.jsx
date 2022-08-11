@@ -9,11 +9,12 @@ const Recomendation = () => {
     <div className="delivered-meals">
       <div className="delivered-images">
         {Object.values(customerImagesSrc).map((item) => {
-          return <img src={item} alt="Customer" />;
+          return <img src={item} alt="happy-customer" />;
         })}
       </div>
-
-      <p></p>
+      <p className="delivered-text">
+        <span>250,000+</span> meals delivered last year!
+      </p>
     </div>
   );
 };
