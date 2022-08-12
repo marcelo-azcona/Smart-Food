@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import Header from './components/header/header.component';
 import HeroSection from './components/hero-section/hero-main.component';
-import HowItWorks from './components/how-it-works-section/how-it-works.component';
+import HowItWorks from './components/how-it-works-section/how-it-works-main.component';
 import './App.css';
 
 class App extends Component {
