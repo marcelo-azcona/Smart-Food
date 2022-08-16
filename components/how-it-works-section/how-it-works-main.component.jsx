@@ -1,23 +1,22 @@
 import Step from './how-it-works-steps.component';
-
 import app1 from '../../assets/img/app/app-screen-1.png';
 import app2 from '../../assets/img/app/app-screen-2.png';
 import app3 from '../../assets/img/app/app-screen-3.png';
-import '../reusable.styles/reusable.styles.css';
+import '../../helpers/general.styles.css';
 import './how-it-works.style.css';
 
 const HowItWorks = () => {
   const stepData = {
-    data1: {
+    info1: {
       step: '01',
-      heading: '',
+      heading: 'Tell us what do you like!',
       description:
         'Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter whatdiet you follow!',
       img: app1,
       imgAlt: 'Phone app preferences',
       imgToTheRight: true,
     },
-    data2: {
+    info2: {
       step: '02',
       heading: '',
       description:
@@ -26,7 +25,7 @@ const HowItWorks = () => {
       imgAlt: 'Phone app meal plan',
       imgToTheRight: false,
     },
-    data3: {
+    info3: {
       step: '03',
       heading: '',
       description:
@@ -46,10 +45,10 @@ const HowItWorks = () => {
         </h2>
       </div>
 
-      <div className="container grid grid--2-columns">
-        <Step stepData={stepData.data1} />
-        <Step stepData={stepData.data2} />
-        <Step stepData={stepData.data3} />
+      <div className="container grid grid-center-v grid--2-columns">
+        <Step stepData={stepData.info1} />
+        <Step stepData={stepData.info2} />
+        <Step stepData={stepData.info3} />
       </div>
     </section>
   );

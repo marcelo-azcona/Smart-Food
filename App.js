@@ -1,35 +1,22 @@
 import { Component } from 'react';
-import Header from './components/header/header.component';
+import Header from './components/header-section/header.component';
 import HeroSection from './components/hero-section/hero-main.component';
+import Featured from './components/featured-section/featured-main.component';
 import HowItWorks from './components/how-it-works-section/how-it-works-main.component';
+import MealsSection from './components/meals-section/meals-main-component';
+
 import './App.css';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      projects: [{ name: 'All', tasks: [] }],
-    };
-  }
-
-  async componentDidMount() {
-    try {
-    } catch (err) {
-      throw err;
-    }
-  }
-
   render() {
-    // console.log('RENDER FROM APP.js');
-    // const { monsters, searchField } = this.state;
-    // const { onSearchChange } = this;
-
     return (
       <div className="App">
         <Header />
         <main>
           <HeroSection />
+          <Featured />
           <HowItWorks />
+          <MealsSection />
         </main>
       </div>
     );

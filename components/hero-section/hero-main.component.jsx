@@ -1,6 +1,6 @@
 import Recomendation from './hero-recomendation.component';
 import heroImg from '../../assets/img/hero.png';
-import '../reusable.styles/reusable.styles.css';
+import '../../helpers/general.styles.css';
 import './hero.style.css';
 
 const HeroSection = () => {
