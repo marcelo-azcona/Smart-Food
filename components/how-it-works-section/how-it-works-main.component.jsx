@@ -18,18 +18,18 @@ const HowItWorks = () => {
     },
     info2: {
       step: '02',
-      heading: '',
+      heading: 'Approve your weekly meal plan',
       description:
-        'Approve your weekly meal plan: Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.',
+        'Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.',
       img: app2,
       imgAlt: 'Phone app meal plan',
       imgToTheRight: false,
     },
     info3: {
       step: '03',
-      heading: '',
+      heading: 'Receive meals at convenient time',
       description:
-        'Receive meals at convenient time: Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!',
+        'Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!',
       img: app3,
       imgAlt: 'Phone app delivery screen',
       imgToTheRight: true,
