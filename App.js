@@ -4,7 +4,8 @@ import HeroSection from './components/hero-section/hero-main.component';
 import Featured from './components/featured-section/featured-main.component';
 import HowItWorks from './components/how-it-works-section/how-it-works-main.component';
 import MealsSection from './components/meals-section/meals-main.component';
-
+import Testimonials from './components/testimonials-section/testimonials-main.component';
+import PricingSection from './components/pricing-section/pricing-main.component';
 import './App.css';
 
 class App extends Component {
@@ -17,6 +18,8 @@ class App extends Component {
           <Featured />
           <HowItWorks />
           <MealsSection />
+          <Testimonials />
+          <PricingSection />
         </main>
       </div>
     );
