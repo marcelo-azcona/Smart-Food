@@ -1,3 +1,4 @@
+import CtaForm from './cta-form.component';
 import './cta-style.css';
 import '../../helpers/general.styles.css';
 
@@ -15,21 +16,7 @@ const CallToAction = () => {
               eating well today. You can cancel or pause anytime. And the first
               meal is on us!
             </p>
-
-            <form className="cta-form" action="#">
-              <label for="full-name">Full Name</label>
-              <input id="full-name" type="text" placeholder="Your name" />
-
-              <label for="email">Email adress</label>
-              <input id="email" type="email" placeholder="email@example.com" />
-
-              <label for="select-where">Where did you hear from us?</label>
-              <select id="select-where">
-                <option value="friends">Friends and family</option>
-              </select>
-
-              <button className="btn">Sign up now!</button>
-            </form>
+            <CtaForm />
           </div>
           <div
             className="cta-imgbox"

@@ -7,7 +7,11 @@ const ImgList = ({ ImagesSrc, alt, parentContainer, parentContainerClass }) => {
         {Object.values(ImagesSrc).map((item, index) => {
           return (
             <Container className={`${parentContainerClass}`}>
-              <img src={item} alt={Array.isArray(alt) ? alt[index] : alt} />
+              <img
+                key={index}
+                src={item}
+                alt={Array.isArray(alt) ? alt[index] : alt}
+              />
             </Container>
           );
         })}
@@ -17,7 +21,13 @@ const ImgList = ({ ImagesSrc, alt, parentContainer, parentContainerClass }) => {
     return (
       <>
         {Object.values(ImagesSrc).map((item, index) => {
-          return <img src={item} alt={Array.isArray(alt) ? alt[index] : alt} />;
+          return (
+            <img
+              key={index}
+              src={item}
+              alt={Array.isArray(alt) ? alt[index] : alt}
+            />
+          );
         })}
       </>
     );

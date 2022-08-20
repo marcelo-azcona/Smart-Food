@@ -4,7 +4,9 @@ import './header.style.css';
 const Header = () => {
   return (
     <header className="header">
-      <img className="logo" alt="Smartfood logo" src={`${mainLogo}`}></img>
+      <a href="#">
+        <img className="logo" alt="Smartfood logo" src={`${mainLogo}`}></img>
+      </a>
       <nav className="main-nav">
         <ul className="main-nav-list">
           <li>

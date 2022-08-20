@@ -3,7 +3,7 @@ import { IoRestaurantOutline } from 'react-icons/io5';
 import { IoFlameOutline } from 'react-icons/io5';
 
 const MealCard = ({ foodDescription }) => {
-  const { title, imgSrc, alt, tags, attributes } = foodDescription;
+  const { id, title, imgSrc, alt, tags, attributes } = foodDescription;
 
   return (
     <div className="meal">
