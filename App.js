@@ -6,6 +6,7 @@ import HowItWorks from './components/how-it-works-section/how-it-works-main.comp
 import MealsSection from './components/meals-section/meals-main.component';
 import Testimonials from './components/testimonials-section/testimonials-main.component';
 import PricingSection from './components/pricing-section/pricing-main.component';
+import CallToAction from './components/callToAction-section/cta-main.component';
 import './App.css';
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
           <MealsSection />
           <Testimonials />
           <PricingSection />
+          <CallToAction />
         </main>
       </div>
     );
