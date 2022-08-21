@@ -11,27 +11,27 @@ const Header = () => {
         <ul className="main-nav-list">
           <li>
             <a href="#" className="main-nav-link">
-              Section 1
+              How it works
             </a>
           </li>
           <li>
             <a href="#" className="main-nav-link">
-              Section 2
+              Meals
             </a>
           </li>
           <li>
             <a href="#" className="main-nav-link">
-              Section 3
+              Testimonials
             </a>
           </li>
           <li>
             <a href="#" className="main-nav-link">
-              Section 4
+              Pricing
             </a>
           </li>
           <li>
             <a href="#" className="main-nav-link nav-cta">
-              Section 5
+              Try it for free!
             </a>
           </li>
         </ul>

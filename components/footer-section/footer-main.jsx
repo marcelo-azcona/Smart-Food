@@ -10,7 +10,7 @@ import './footer.style.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="container grid grid--5-columns ">
+      <div className="container grid grid--footer">
         <div className="logo-column">
           <a href="#">
             <img
@@ -22,18 +22,18 @@ const Footer = () => {
 
           <ul className="social-links">
             <li>
-              <a href="">
-                <IoLogoInstagram />
+              <a href="#" className="footer-link">
+                <IoLogoInstagram className="social-icon" />
               </a>
             </li>
             <li>
-              <a href="">
-                <IoLogoFacebook />
+              <a href="#" className="footer-link">
+                <IoLogoFacebook className="social-icon" />
               </a>
             </li>
             <li>
-              <a href="">
-                <IoLogoTwitter />
+              <a href="#" className="footer-link">
+                <IoLogoTwitter className="social-icon" />
               </a>
             </li>
           </ul>
@@ -43,20 +43,24 @@ const Footer = () => {
           </p>
         </div>
         <div className="address-column">
-          <p className="adress-title">Contact us</p>
+          <p className="footer-title">Contact us</p>
           <address className="contacts">
             <p>277 Entre Ríos, Villa María, Córdoba</p>
             <p>
-              <a href="tel:+54 9 353 1234-5678">+54 9 353 1234-5678.</a>
+              <a className="footer-link" href="tel:+54 9 353 1234-5678">
+                +54 9 353 1234-5678.
+              </a>
             </p>
             <p>
-              <a href="mailto:contact@smartfood.com">contact@smartfood.com</a>
+              <a className="footer-link" href="mailto:contact@smartfood.com">
+                contact@smartfood.com
+              </a>
             </p>
           </address>
         </div>
 
         <NavigationMenu
-          title="Accounts"
+          title="Account"
           item1="Create Account"
           item2="Sign in"
           item3="iOS app"
