@@ -4,7 +4,7 @@ import '../../helpers/general.styles.css';
 
 const CallToAction = () => {
   return (
-    <section className="section-cta">
+    <section className="section-cta" id="cta">
       <div className="container">
         <div className="cta">
           <div className="cta-textbox">

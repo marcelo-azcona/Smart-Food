@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import Recomendation from './hero-recomendation.component';
 import heroImg from '../../assets/img/hero.png';
 import '../../helpers/general.styles.css';
@@ -19,9 +20,16 @@ const HeroSection = () => {
           <a href="#" className="btn btn--full margin-right-sm">
             Start a healthy life!
           </a>
-          <a href="#" className="btn btn--outline">
+          <Link
+            to="howitworks"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="btn btn--outline"
+          >
             Learn more &darr;
-          </a>
+          </Link>
           <Recomendation />
         </div>
         <div className="hero-img-box">

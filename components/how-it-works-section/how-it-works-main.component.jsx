@@ -37,7 +37,7 @@ const HowItWorks = () => {
   };
 
   return (
-    <section className="section-how">
+    <section className="section-how" id="howitworks">
       <div className="container">
         <span className="subheading">How it works?</span>
         <h2 className="heading-secondary">
