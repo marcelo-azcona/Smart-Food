@@ -1,4 +1,3 @@
-import { Component } from 'react';
 import Header from './components/header-section/header.component';
 import HeroSection from './components/hero-section/hero-main.component';
 import Featured from './components/featured-section/featured-main.component';
@@ -10,24 +9,22 @@ import CallToAction from './components/callToAction-section/cta-main.component';
 import Footer from './components/footer-section/footer-main';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <main>
-          <HeroSection />
-          <Featured />
-          <HowItWorks />
-          <MealsSection />
-          <Testimonials />
-          <PricingSection />
-          <CallToAction />
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div className="App">
+      <Header />
+      <main>
+        <HeroSection />
+        <Featured />
+        <HowItWorks />
+        <MealsSection />
+        <Testimonials />
+        <PricingSection />
+        <CallToAction />
+      </main>
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
