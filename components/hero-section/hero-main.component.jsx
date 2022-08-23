@@ -17,9 +17,16 @@ const HeroSection = () => {
             healthy again. Tailored to your personal tastes and nutritional
             needs.
           </p>
-          <a href="#" className="btn btn--full margin-right-sm">
+          <Link
+            to="cta"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="btn btn--full margin-right-sm"
+          >
             Start a healthy life!
-          </a>
+          </Link>
           <Link
             to="howitworks"
             spy={true}

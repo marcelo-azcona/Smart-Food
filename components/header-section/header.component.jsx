@@ -1,15 +1,44 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 import mainLogo from '../../assets/img/smartfood-logo.png';
 import './header.style.css';
 
 const Header = () => {
+  const [openMenuClass, setOpenMenuClass] = useState('');
+  const [stickyClass, setStickyClass] = useState('');
+
+  useEffect(() => {
+    const heroSectionEl = document.querySelector('.section-hero');
+    const headerEl = document.querySelector('.header');
+
+    const obs = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (!entry.isIntersecting && !headerEl.classList.contains('nav-open')) {
+          setStickyClass('sticky');
+        }
+        if (entry.isIntersecting) {
+          setStickyClass('');
+          setOpenMenuClass('');
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: '-80px',
+      }
+    );
+
+    obs.observe(heroSectionEl);
+  }, []);
+
   const toggleMobileMenu = () => {
-    document.querySelector('.header').classList.toggle('nav-open');
+    openMenuClass === '' ? setOpenMenuClass('nav-open') : setOpenMenuClass('');
   };
 
   return (
-    <header className="header">
+    <header className={`header ${openMenuClass} ${stickyClass}`}>
       <a href="#">
         <img className="logo" alt="Smartfood logo" src={`${mainLogo}`}></img>
       </a>

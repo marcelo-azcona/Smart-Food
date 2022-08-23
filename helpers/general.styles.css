@@ -93,7 +93,7 @@
   /* Put the transition in the original state */
   transition: all 500ms;
 }
-
+.btn--full,
 .btn--full:link,
 .btn--full:visited {
   background-color: #e67e22;
@@ -111,6 +111,7 @@
   color: #555;
 }
 
+.btn--outline,
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #fdf2e9;
